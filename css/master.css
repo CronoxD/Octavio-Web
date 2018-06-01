@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FAFAFA;
+}
+
+header {
+    position: relative;
+    background-image: url('http://static.t13.cl/images/sizes/1200x675/1493938270-programacion-istock.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 490px;
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    color: #CEF6EC;
+    width: 40%;
+    position: absolute;
+    margin: 30px 26%;
+    border-radius: 8px;
+    padding: 40px;
+    background: rgba(110,110,110,0.5);
+    font-family: 'Concert One', cursive;
+    border: 1px solid lightblue;
+}
+
+.card h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.card h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.card img{
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid lightblue;
+}
+
+.container {
+    display: grid;
+    margin: 40px 80px;
+    grid-row-gap: 50px;
+    justify-content: space-between;
+    grid-template: repeat(2, 50%) / repeat(3, 30%);
+    /* grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%; */
+}
+
+.item {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    font-family: 'Playfair Display', serif;
+    background: white;
+    align-self:baseline;
+    border-radius: 3px;
+}
+.aboutMe {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 19px;
+    text-align: justify;
+}
+.resaltado {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.academica {
+    grid-row: 1;
+    text-align: center;
+    grid-column: 2 / span 2;
+}
+.academica img {
+    width: 95%;
+    margin: 20px 0;
+    border: 5px ridge;
+    padding: 5px;
+}
+
+.skills {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    grid-column: span 2;
+}
+.skills .resaltado {
+    grid-column: span 3;
+}
+
+.skills p {
+    
+}
