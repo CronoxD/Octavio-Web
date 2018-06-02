@@ -15,6 +15,13 @@ header {
     height: 490px;
     text-align: center;
 }
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
 
 .shadow {
     box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.3);
@@ -47,12 +54,13 @@ header {
     border: 2px solid lightblue;
 }
 
+
 .container {
     display: grid;
     margin: 40px 80px;
     grid-row-gap: 50px;
     justify-content: space-between;
-    grid-template: repeat(2, 50%) / repeat(3, 30%);
+    grid-template: 1fr / repeat(3, 30%);
     /* grid-template-columns: 30% 30% 30%;
     grid-template-rows: 50% 50%; */
 }
@@ -79,6 +87,8 @@ header {
 }
 .academica {
     grid-row: 1;
+    color: white;
+    background-color: #610B0B;
     text-align: center;
     grid-column: 2 / span 2;
 }
@@ -91,6 +101,8 @@ header {
 
 .skills {
     display: grid;
+    color: white;
+    background-color: #0B0B61;
     grid-template: 1fr / repeat(3, 1fr);
     grid-column: span 2;
 }
@@ -99,7 +111,7 @@ header {
 }
 
 .icons {
-    color: #424242;
+    /* color: #424242; */
     grid-column: span 3;
     font-size: 30px;
     text-align: center;
@@ -119,4 +131,81 @@ header {
     font-size: 40px;
     text-align: center;
     grid-column: span 3;
+}
+
+.projects {
+    position: relative;
+    color: white;
+    /* cursor: pointer; */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    height: 300px;
+}
+
+.container-hover:hover .projects {
+    transform: rotateY(180deg);
+
+}
+
+.container-hover:hover .project-desc {
+    display: block;
+}
+.project-desc {
+    position: absolute;
+    transform: rotateY(180deg);
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 30px;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6)
+}
+
+.p1 {
+    background-image: url('../images/laravel.jpg');
+    background-color: #E16130;
+    color: #610B0B;
+}
+
+.p2 {
+    background-image: url('../images/bootstrap.jpg');
+    background-color: #61418D;
+    color: #1B0A2A;
+}
+.p3 {
+    background-image: url('../images/js.png');
+    background-color: #F0DB4F;
+    color: #886A08;
+}
+
+.footer {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0 70px;
+    height: 250px;
+    color: white;
+    background-color: #0B0719;
+    grid-template: 1fr / repeat(4,1fr);
+    font-family: 'Playfair Display', serif;
+
+}
+.icon-github {
+    font-size: 45px;
+}
+.item-footer{
+    padding: 10px;
+    align-self: center;
+    font-style: oblique;
+
+}
+
+.foot1 {
+    grid-column: 2;
+}
+.foot2 {
+    grid-column: 3;
 }
