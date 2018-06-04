@@ -143,6 +143,12 @@ header {
     transition: 0.5s;
     height: 300px;
 }
+.projects img {
+    position: absolute;
+    width: 80px;
+    top: 50%;
+    left: 0;
+}
 .container-hover {
     z-index: 10;
 }
