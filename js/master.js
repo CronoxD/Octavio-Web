@@ -36,17 +36,27 @@ function animar(element) {
 const tapProject1 = new Hammer(project1);
 // listen to events...
 tapProject1.on("tap", function(ev) {
-    window.open('https://minventario-test.herokuapp.com/');
+    console.log(ev)
+    if(ev.pointerType == 'touch') {
+        window.open('https://minventario-test.herokuapp.com/');
+    }
+    
 });
 
 const tapProject2 = new Hammer(project2);
 // listen to events...
 tapProject2.on("tap", function(ev) {
-    window.open('https://cronoxd.github.io/web-Transports/');
+    console.log(ev)
+    if(ev.pointerType == 'touch') {
+        window.open('https://cronoxd.github.io/web-Transports/');
+    }
 });
 
 const tapProject3 = new Hammer(project3);
 // listen to events...
 tapProject3.on("tap", function(ev) {
-    window.open('https://cronoxd.github.io/aGame/');
+    console.log(ev)
+    if(ev.pointerType == 'touch') {
+        window.open('https://cronoxd.github.io/aGame/');
+    }
 });
