@@ -174,19 +174,21 @@ header {
 }
 
 #p1 {
-    background-image: url('../images/laravel.jpg');
-    background-color: #E16130;
+    background-image: url('../images/minventario.png');
+    background-size: contain;
+    /* background-color: #E16130; */
     color: #610B0B;
 }
 
 #p2 {
     background-image: url('../images/bootstrap.jpg');
+    background-size: cover;
     background-color: #61418D;
     color: #1B0A2A;
 }
 #p3 {
-    background-image: url('../images/js.png');
-    background-color: #F0DB4F;
+    background-image: url('../images/search_movies.png');
+    background-position-y: 0%;
     color: #886A08;
 }
 

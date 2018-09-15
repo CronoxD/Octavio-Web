@@ -1,6 +1,6 @@
 /**
  * Lee los eventos "swipe" para rotar la tarjeta de un proyecto
- * y poder leer su descripción
+ * y poder leer su descripción en dispositivos movil
  */
 
 const projects = document.getElementsByClassName('projects');
@@ -36,7 +36,6 @@ function animar(element) {
 const tapProject1 = new Hammer(project1);
 // listen to events...
 tapProject1.on("tap", function(ev) {
-    console.log(ev)
     if(ev.pointerType == 'touch') {
         window.open('https://minventario-test.herokuapp.com/');
     }
@@ -46,7 +45,6 @@ tapProject1.on("tap", function(ev) {
 const tapProject2 = new Hammer(project2);
 // listen to events...
 tapProject2.on("tap", function(ev) {
-    console.log(ev)
     if(ev.pointerType == 'touch') {
         window.open('https://cronoxd.github.io/web-Transports/');
     }
@@ -55,8 +53,7 @@ tapProject2.on("tap", function(ev) {
 const tapProject3 = new Hammer(project3);
 // listen to events...
 tapProject3.on("tap", function(ev) {
-    console.log(ev)
     if(ev.pointerType == 'touch') {
-        window.open('https://cronoxd.github.io/aGame/');
+        window.open('https://cronoxd.github.io/search-movies');
     }
 });
