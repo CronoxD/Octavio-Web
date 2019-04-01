@@ -1,16 +1,15 @@
-@import 'icons.css';
-
 body {
     margin: 0;
     padding: 0;
     background: #FAFAFA;
 }
 
-a:link {
+address a:link {
     color: inherit;
     text-decoration: none;
 }
-a:visited {
+
+address a:visited {
     color: inherit;
 }
 
@@ -128,68 +127,25 @@ header {
 .portafolio h3 {
     margin: 0;
     padding: 0;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     grid-column: span 3;
 }
 
-.projects {
-    position: relative;
-    color: white;
-    /* cursor: pointer; */
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-    height: 300px;
+.project {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Playfair Display', serif;
+    border-radius: 3px;
 }
-.projects img {
-    position: absolute;
-    width: 80px;
-    top: 50%;
-    left: 0;
-}
-.container-hover {
-    z-index: 10;
-}
-.container-hover:hover .projects {
-    transform: rotateY(180deg);
-
-}
-
-.container-hover:hover .project-desc {
-    display: block;
+.project img {
+    width: 100%;
 }
 .project-desc {
-    position: absolute;
-    transform: rotateY(180deg);
-    display: none;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 0 30px;
-    font-size: 22px;
+    padding: 15px;
+}
+
+.project-desc h4 {
     text-align: center;
-    background-color: rgba(255,255,255,0.6)
-}
-
-#p1 {
-    background-image: url('../images/minventario.png');
-    background-size: contain;
-    /* background-color: #E16130; */
-    color: #610B0B;
-}
-
-#p2 {
-    background-image: url('../images/bootstrap.jpg');
-    background-size: cover;
-    background-color: #61418D;
-    color: #1B0A2A;
-}
-#p3 {
-    background-image: url('../images/search_movies.png');
-    background-position-y: 0%;
-    color: #886A08;
 }
 
 .footer {
@@ -203,8 +159,10 @@ header {
     font-family: 'Playfair Display', serif;
 
 }
-.icon-github {
+.fab.fa-github {
     font-size: 45px;
+    color: white;
+    text-decoration: none;
 }
 .item-footer{
     padding: 10px;
@@ -249,9 +207,6 @@ header {
     }
     .icons {
         font-size: 25px;
-    }
-    .projects {
-        height: 250px;
     }
 
     .contacto {
