@@ -76,7 +76,7 @@ header {
     grid-column: 1;
     grid-row: 1;
     font-size: 19px;
-    text-align: justify;
+    text-align: left;
 }
 .resaltado {
     margin-top: 0;
@@ -159,10 +159,11 @@ header {
     font-family: 'Playfair Display', serif;
 
 }
-.fab.fa-github {
-    font-size: 45px;
+.icons-footer {
+    font-size: 32px;
     color: white;
     text-decoration: none;
+    margin: 0 5px;
 }
 .item-footer{
     padding: 10px;
